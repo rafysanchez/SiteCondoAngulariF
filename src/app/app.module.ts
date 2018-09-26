@@ -15,13 +15,29 @@ import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 
 import './rxjs-operators';
+import { VeiculosComponent } from './veiculos/veiculos.component';
+import { RecadosComponent } from './recados/recados.component';
+import { EventosComponent } from './eventos/eventos.component';
+import { MoradoresVisitantesComponent } from './moradores-visitantes/moradores-visitantes.component';
+import { OcorrenciasComponent } from './ocorrencias/ocorrencias.component';
+import { RelatoriosComponent } from './relatorios/relatorios.component';
+import { SobreComponent } from './sobre/sobre.component';
+import { AjudaComponent } from './ajuda/ajuda.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    LoginComponent
+    LoginComponent,
+    VeiculosComponent,
+    RecadosComponent,
+    EventosComponent,
+    MoradoresVisitantesComponent,
+    OcorrenciasComponent,
+    RelatoriosComponent,
+    SobreComponent,
+    AjudaComponent
   ],
   imports: [
     BrowserModule,
