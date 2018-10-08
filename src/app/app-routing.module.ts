@@ -12,6 +12,7 @@ import { OcorrenciasComponent } from './ocorrencias/ocorrencias.component';
 import { RelatoriosComponent } from './relatorios/relatorios.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { AjudaComponent } from './ajuda/ajuda.component';
+import { UsuariosComponent} from './usuarios/usuarios.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, canActivate: [AuthGuard] },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'Relatorios', component: RelatoriosComponent, canActivate: [AuthGuard] },
   { path: 'Sobre', component: SobreComponent, canActivate: [AuthGuard] },
   { path: 'Ajuda', component: AjudaComponent, canActivate: [AuthGuard] },
+  { path: 'users', component: UsuariosComponent, canActivate: [AuthGuard] },
   { path: '**', redirectTo: ''}
 ];
 

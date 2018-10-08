@@ -23,6 +23,8 @@ import { OcorrenciasComponent } from './ocorrencias/ocorrencias.component';
 import { RelatoriosComponent } from './relatorios/relatorios.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { AjudaComponent } from './ajuda/ajuda.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { ApiService } from './App.Service';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { AjudaComponent } from './ajuda/ajuda.component';
     OcorrenciasComponent,
     RelatoriosComponent,
     SobreComponent,
-    AjudaComponent
+    AjudaComponent,
+    UsuariosComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,7 @@ import { AjudaComponent } from './ajuda/ajuda.component';
     BrowserAnimationsModule,
     AppMaterialModule
   ],
-  providers: [AuthService, AuthGuard],
+  providers: [AuthService, AuthGuard, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
